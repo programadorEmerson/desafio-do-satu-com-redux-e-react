@@ -33,6 +33,6 @@
       "@/utils*": ["./src/utils*"]
     }
   },
-  "include": ["src", "src/@types/mui-theme.d.ts"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

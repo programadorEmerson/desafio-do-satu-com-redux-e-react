@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
-import { Button } from '@mui/material'
-import { DatePicker } from '@mui/x-date-pickers'
+import Header from '@/components/Header'
 
 import reactLogo from './assets/react.svg'
 
@@ -15,7 +14,7 @@ function App() {
   return (
     <>
       <div>
-        <DatePicker label="Basic date picker" />
+        <Header />
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -25,11 +24,11 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <Button variant='contained' color='primary' onClick={() => setCount((count) => count + 1)}>
+        <button onClick={() => setCount((count) => count + 1)}>
           count is 
           {' '}
           {count}
-        </Button>
+        </button>
         <p>
           Edit 
           {' '}
